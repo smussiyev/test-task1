@@ -24,3 +24,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['namespace' => 'App\Http\Controllers\Action'], function() {
     Route::get('/action', 'IndexController');
 });
+
+Route::group(['namespace' => 'App\Http\Controllers\TestTask'], function() {
+    Route::get('/test-task', 'IndexController');
+});
